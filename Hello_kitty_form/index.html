@@ -9,24 +9,40 @@
     <h1 id="title">Hello Kitty Survey Form</h1>
     <p id="description"></p>
     <form id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" placeholder="Enter your name">
-        <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" placeholder="Enter your emial">
-        <label for="number" id="number-label">Name</label>
-        <input type="number" id="number" placeholder="Enter your number">
-        <label for=""><input type="radio" name="" id="">first option</label>
-        <label for=""><input type="radio" name="" id="">second option</label>
-        <select name="" id="dropdown">
-            <option value=""></option>
-            <option value=""></option>
-        </select>
-        <label for=""><input type="checkbox" name="" id="">first</label>
-        <label for=""><input type="checkbox" name="" id="">first</label>
-        <label for=""><input type="checkbox" name="" id="">first</label>
-       
-        <label for="">Any comment or suggestion</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <fieldset>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your emial">
+            <label for="number" id="number-label">Name</label>
+            <input type="number" id="number" placeholder="Enter your number">
+        </fieldset>   
+        <fieldset>
+            <legend>How did you Discover about Hello Kitty?</legend>
+            <label for="tv"><input type="radio" name="tv" id="tv">TV</label>
+            <label for="social-media"><input type="radio" name="social-media" id="social-media">TV</label>
+            <label for="friend"><input type="radio" name="friend" id="friend">Through friend</label>
+         </fieldset>
+         <fieldset>
+            <label for="dropdown">Favourite Hello Kitty Character:
+                <select name="dropdown" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="hello-kitty">Hello Kitty</option>
+                    <option value="my-melody">My Melody</option>
+                    <option value="pompompurin">Pompompurin</option>
+                    <option value="cinnamoroll">Cinnamoroll</option>
+                    <option value="keroppi">Keroppi</option>
+                    <option value="badts-maru">Badtz-Maru</option>
+                </select>
+             </label>  
+             <fieldset>
+                <legend>Favorite Hello Kitty Merchandise:</legend>
+                <label for="plush-toys"><input type="checkbox" name="merchandise" id="plush-toys">Plush toys</label>
+                <label for="stationary"><input type="checkbox" name="merchandise" id="stationary">Stationery,</label>
+                <label for="clothing"><input type="checkbox" name="merchandise" id="clothing">clothing</label>    
+             </fieldset>
+            <label for="memory">Favorite Hello Kitty Memory: <textarea name="memory" id="memory" cols="30" rows="10"></textarea></label>        
+         </fieldset>    
         <input type="submit" id="submit">
     </form>
 </body>
